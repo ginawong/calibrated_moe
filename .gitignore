@@ -1,0 +1,33 @@
+# Data (raw + cached)
+data/
+
+# Trained model checkpoints + per-(method, seed) JSON metrics
+experiment_results/
+
+# Heavy prediction cache (regenerable)
+.cache/
+
+# Generated outputs
+figures/
+output/
+
+# Paper-specific artifacts (figures + tables exported for the publication)
+PAPER_RESULTS/
+
+# Local-only quarantine for legacy / non-paper experiment runs
+historical_artifacts/
+
+# Build / editor
+__pycache__/
+*.egg-info/
+.claude/
+.vscode/
+
+# File types
+*.dat
+*.csv
+*.log
+*.tmp
+*.png
+*.pt
+*.json

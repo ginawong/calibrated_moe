@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calibrated_moe"
+version = "0.1.0"
+description = "Distributionally robust training for soft-routed Mixture of Experts to improve calibration under subpopulation shift."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy",
+    "matplotlib",
+    "Pillow",
+    "tqdm",
+    "transformers>=4.30",  # for DistilBert (civilcomments)
+    "wilds>=2.0",          # for the civilcomments dataset
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
